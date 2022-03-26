@@ -1,0 +1,29 @@
+version=1
+title=1 M977 HEMTT
+description=[b]Support our efforts to bring more military vehicles into PZ[/b]
+description=[url=https://www.buymeacoffee.com/cytt]cytt0rak[/url]
+description=[url=https://ko-fi.com/sharkmods]Shark[/url]
+description=
+description=[h2][b]XM03 Fox[/b][/h2]
+description=
+description=The [b]XM93 Fox[/b] is a CBRN (Chemical, Biological, Radiological, and Nuclear) reconnaissance imported from Germany as the [b]TPz Fuchs[/b] by Rheinmetall.
+description=The vehicle was imported from Germany for service prior to Operation: Desert Storm. The [b]XM93 Fox[/b] lost its X designation and began domestic contruction after the war as the [b]M93.[/b]
+description=
+description= The mod features two skins: Desert and Woodland.
+description=
+description=[h2][b]Pros:[/b][/h2]
+description=[list]
+description=[*]Armored amd well protected
+description=[*]Large amount of interior storage space + four seats
+description=[*]Can take a considerable beating
+description=[/list]
+description=[h2][b]Cons:[/b][/h2]
+description=[list]
+description=[*]Not suited for tight environments
+description=[*]Very rare
+description=[*]Not very manueverable (Not entirely fixable on our end)
+description=[/list]
+description=
+description=[h2][b]Two examples can be found at the Secret Base in Rosewood and East of the Military Perimeter near Louisville.[/b][/h2]
+tags=
+visibility=public

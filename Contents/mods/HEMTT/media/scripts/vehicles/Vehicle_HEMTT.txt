@@ -1,0 +1,445 @@
+module Base
+{
+	model HEMTTBase
+	{
+		mesh = vehicles/Vehicle_HEMTT_Body,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model HEMTTfrontwheelleft
+	{
+		mesh = vehicles/Vehicle_HEMTT_5,
+		texture = vehicles/Vehicle_HEMTTWheel,
+		shader = vehiclewheel,
+	}
+	model HEMTTfrontwheelright
+	{
+		mesh = vehicles/Vehicle_HEMTT_5,
+		texture = vehicles/Vehicle_HEMTTWheel,
+		shader = vehiclewheel,
+	}
+	model HEMTTbackwheelleft
+	{
+		mesh = vehicles/Vehicle_HEMTT_5,
+		texture = vehicles/Vehicle_HEMTTWheel,
+		shader = vehiclewheel,
+	}
+	model HEMTTbackwheelright
+	{
+		mesh = vehicles/Vehicle_HEMTT_5,
+		texture = vehicles/Vehicle_HEMTTWheel,
+		shader = vehiclewheel,
+	}
+	vehicle HEMTT
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = HEMTTBase,
+			scale = 1.6200,
+			offset = 0.0000 -0.1481 -0.3086,
+		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_HEMTT,
+		}
+
+		textureRust = Vehicles/Vehicle_HEMTTrust,
+		textureMask = Vehicles/Vehicle_HEMTTMASK,
+		textureLights = Vehicles/Vehicle_HEMTT_lights,
+		textureDamage1Shell = Vehicles/Vehicle_HEMTTdamage,
+		textureDamage2Shell = Vehicles/Vehicle_HEMTTdamage2,
+		textureDamage1Overlay = Vehicles/Vehicle_HEMTTBLOOD,
+		textureDamage2Overlay = Vehicles/Vehicle_HEMTTBLOOD,
+
+		textureShadow =
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 1.5556 1.8148 6.0247,
+		mass = 1500,
+		physicsChassisShape = 1.5926 1.8025 6.0370,
+		centerOfMassOffset = 0.0000 0.9074 -0.0123,
+		shadowExtents = 1.5985 6.0466,
+		shadowOffset = 0.0000 -0.0094,
+		engineForce = 10000,
+		engineQuality = 70,
+		engineLoudness = 100,
+		maxSpeed = 55f,
+		brakingForce = 30,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.2f,
+		steeringIncrement = 0.03,
+		steeringClamp = 0.3,
+		suspensionStiffness = 185,
+		suspensionCompression = 3.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.2f,
+		wheelFriction = 1.8f,
+		frontEndHealth = 1500,
+		rearEndHealth = 1500,
+		isSmallVehicle = false,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.6790 0.0000 2.4321,
+			radius = 0.60f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.7531 0.0000 2.3765,
+			radius = 0.60f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.0000 0.0000 -2.0000,
+			radius = 0.60f,
+			width = 2.22f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 0.0000 0.0000 -2.0000,
+			radius = 0.60f,
+			width = 2.22f,
+		}
+
+		template = PassengerSeat2,
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.4383 0.5556 2.6790,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.3951 0.0000 3.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.3951 0.5556 2.6790,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.3951 0.0000 3.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.0494 1.3951 0.9136,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 1.2222 2.5617 0.8889 0.8765,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -1.2222 2.5617 0.8889 0.8765,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.0000 -6.0000 2.0000 2.0000,
+		}
+
+		area SeatRearRight
+		{
+			xywh = 0.0000 -6.0000 2.0000 2.0000,
+		}
+
+		area GasTank
+		{
+			xywh = 0.7469 0.6173 0.0000 0.0000,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = -0.8580 0.0000 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.0000 3.0000 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.7778 -2.3704 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.7778 -2.3704 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+
+		part Windshield*
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+
+		part Door*
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part HEMTTFrontDoor*
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part HEMTTLabContainer
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.HEMTTLabContainer,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.HEMTTLabContainer,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part HEMTTVehicleInterior
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.HEMTTVehicleInterior,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.HEMTTVehicleInterior,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HEMTTfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HEMTTfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HEMTTbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HEMTTbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		physics box
+		{
+			offset = 0.0000 0.9691 -0.0494,
+			extents = 1.4938 1.7284 6.0309,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.0000 4.5256,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

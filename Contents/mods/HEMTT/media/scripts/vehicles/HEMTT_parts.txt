@@ -1,0 +1,22 @@
+module Base
+{
+
+	 item HEMTTLabContainer
+    {
+        Weight    =    30,
+        Type    =    Normal,
+        MaxCapacity    =    30,
+        DisplayName    =    HEMTT Containers,
+        ConditionMax = 100,
+    }
+
+    	item HEMTTVehicleInterior
+    {
+        Weight    =    30,
+        Type    =    Normal,
+        MaxCapacity    =    120,
+        DisplayName    =    Interior Space,
+        ConditionMax = 100,
+    }
+	
+}
