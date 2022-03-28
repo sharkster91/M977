@@ -9,29 +9,29 @@ module Base
 	}
 	model HEMTTfrontwheelleft
 	{
-		mesh = vehicles/Vehicle_HEMTT_5,
+		mesh = vehicles/Vehicle_HEMTT_wheelleft,
 		texture = vehicles/Vehicle_HEMTTWheel,
 		shader = vehiclewheel,
 	}
 	model HEMTTfrontwheelright
 	{
-		mesh = vehicles/Vehicle_HEMTT_5,
+		mesh = vehicles/Vehicle_HEMTT_wheelright,
 		texture = vehicles/Vehicle_HEMTTWheel,
 		shader = vehiclewheel,
 	}
 	model HEMTTbackwheelleft
 	{
-		mesh = vehicles/Vehicle_HEMTT_5,
+		mesh = vehicles/Vehicle_HEMTT_rearwheels,
 		texture = vehicles/Vehicle_HEMTTWheel,
 		shader = vehiclewheel,
 	}
 	model HEMTTbackwheelright
 	{
-		mesh = vehicles/Vehicle_HEMTT_5,
+		mesh = vehicles/Vehicle_HEMTT_rearwheels,
 		texture = vehicles/Vehicle_HEMTTWheel,
 		shader = vehiclewheel,
 	}
-	vehicle HEMTT
+	vehicle M977HEMTT
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1,
@@ -69,10 +69,10 @@ module Base
 
 		extents = 1.5556 1.8148 6.0247,
 		mass = 1500,
-		physicsChassisShape = 1.5926 1.8025 6.0370,
+		physicsChassisShape = 1.4321 1.8025 5.7531,
 		centerOfMassOffset = 0.0000 0.9074 -0.0123,
-		shadowExtents = 1.5985 6.0466,
-		shadowOffset = 0.0000 -0.0094,
+		shadowExtents = 1.4195 5.8120,
+		shadowOffset = 0.0000 0.0153,
 		engineForce = 10000,
 		engineQuality = 70,
 		engineLoudness = 100,
@@ -96,7 +96,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.6790 0.0000 2.4321,
+			offset = -0.5802 -0.1111 2.1420,
 			radius = 0.60f,
 			width = 0.30f,
 		}
@@ -104,7 +104,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.7531 0.0000 2.3765,
+			offset = 0.5802 -0.1111 2.1420,
 			radius = 0.60f,
 			width = 0.30f,
 		}
@@ -112,7 +112,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.0000 0.0000 -2.0000,
+			offset = 0.0000 -0.0802 -0.8827,
 			radius = 0.60f,
 			width = 2.22f,
 		}
@@ -120,7 +120,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 0.0000 0.0000 -2.0000,
+			offset = 0.0000 -0.0802 -1.9012,
 			radius = 0.60f,
 			width = 2.22f,
 		}
@@ -141,14 +141,6 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
-
-			switchSeat RearLeft
-			{
-			}
-
-			switchSeat RearRight
-			{
-			}
 		}
 
 		passenger FrontRight
@@ -164,14 +156,6 @@ module Base
 				offset = -1.3951 0.0000 3.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
-			}
-
-			switchSeat RearLeft
-			{
-			}
-
-			switchSeat RearRight
-			{
 			}
 		}
 
@@ -190,24 +174,19 @@ module Base
 			xywh = -1.2222 2.5617 0.8889 0.8765,
 		}
 
-		area SeatRearLeft
-		{
-			xywh = 0.0000 -6.0000 2.0000 2.0000,
-		}
-
-		area SeatRearRight
-		{
-			xywh = 0.0000 -6.0000 2.0000 2.0000,
-		}
-
 		area GasTank
 		{
 			xywh = 0.7469 0.6173 0.0000 0.0000,
 		}
 
+		area TruckBed
+		{
+			xywh = 0.0000 -1.3704 1.8519 3.5062,
+		}
+
 		area TireFrontLeft
 		{
-			xywh = -0.8580 0.0000 0.0000 0.0000,
+			xywh = -0.7778 0.0000 0.0000 0.0000,
 		}
 
 		area TireFrontRight
@@ -227,12 +206,19 @@ module Base
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+		template = Trunk/part/TruckBedOpen,
+
+		part TruckBedOpen
+		{
+			container
+			{
+				capacity = 700,
+			}
+		}
 
 		part Muffler
 		{
@@ -316,40 +302,6 @@ module Base
 			}
 		}
 
-		part HEMTTLabContainer
-		{
-			area = SeatMiddleLeft,
-			itemType = Base.HEMTTLabContainer,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.HEMTTLabContainer,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part HEMTTVehicleInterior
-		{
-			area = SeatMiddleLeft,
-			itemType = Base.HEMTTVehicleInterior,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.HEMTTVehicleInterior,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		template = Tire,
 		template = Axle,
 
@@ -430,14 +382,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9691 -0.0494,
-			extents = 1.4938 1.7284 6.0309,
+			offset = 0.0123 0.2469 0.0494,
+			extents = 1.3951 1.7284 5.8704,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 4.5256,
+			offset = 0.0000 0.0000 3.3704,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
