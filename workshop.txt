@@ -1,5 +1,5 @@
 version=1
-title=1 M977 HEMTT
+title=HEMTT Series
 description=[b]Support our efforts to bring more military vehicles into PZ[/b]
 description=[url=https://www.buymeacoffee.com/cytt]cytt0rak[/url]
 description=[url=https://ko-fi.com/sharkmods]Shark[/url]
