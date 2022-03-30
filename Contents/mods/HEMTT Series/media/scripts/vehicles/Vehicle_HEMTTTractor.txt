@@ -50,6 +50,16 @@ module Base
 			texture = Vehicles/Vehicle_HEMTTTractorCamo,
 		}
 
+		skin
+		{
+			texture = Vehicles/Vehicle_HEMTTTractorDesert,
+		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_HEMTTTractorGreen,
+		}
+
 		textureRust = Vehicles/Vehicle_HEMTTrust,
 		textureMask = Vehicles/Vehicle_HEMTTMASK,
 		textureLights = Vehicles/Vehicle_HEMTT_lights,
