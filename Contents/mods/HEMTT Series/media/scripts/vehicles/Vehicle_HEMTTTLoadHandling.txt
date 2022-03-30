@@ -63,8 +63,8 @@ module Base
 
 
 		textureRust = Vehicles/Vehicle_HEMTTrust,
-		textureMask = Vehicles/Vehicle_HEMTTMASK,
-		textureLights = Vehicles/Vehicle_HEMTT_lights,
+		textureMask = Vehicles/Vehicle_HEMTTMASKBase,
+		textureLights = Vehicles/Vehicle_HEMTT_lightsbase,
 		textureDamage1Shell = Vehicles/Vehicle_HEMTTdamage,
 		textureDamage2Shell = Vehicles/Vehicle_HEMTTdamage2,
 		textureDamage1Overlay = Vehicles/Vehicle_HEMTTBLOOD,
