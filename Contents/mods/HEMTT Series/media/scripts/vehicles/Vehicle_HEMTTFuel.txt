@@ -31,7 +31,7 @@ module Base
 		texture = vehicles/Vehicle_HEMTTWheel,
 		shader = vehiclewheel,
 	}
-	vehicle M977HEMTTFuel
+	vehicle HEMTTFuel
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1,
@@ -47,8 +47,20 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/Vehicle_HEMTTFuel,
+			texture = Vehicles/Vehicle_HEMTTFuelCamo,
 		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_HEMTTFuelGreen,
+		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_HEMTTFuelDesert,
+		}
+
+
 
 		textureRust = Vehicles/Vehicle_HEMTTrust,
 		textureMask = Vehicles/Vehicle_HEMTTMASK,

@@ -31,7 +31,7 @@ module Base
 		texture = vehicles/Vehicle_HEMTTWheel,
 		shader = vehiclewheel,
 	}
-	vehicle M977HEMTTCargo
+	vehicle HEMTTCargo
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1,
@@ -47,7 +47,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/Vehicle_HEMTTCargo,
+			texture = Vehicles/Vehicle_HEMTTCargoCamo,
 		}
 
 		skin

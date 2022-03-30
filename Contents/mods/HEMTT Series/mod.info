@@ -1,0 +1,5 @@
+name= 1 HEMTT Series
+id=HEMTTSeries
+description= The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck.
+require=tsarslib
+poster=poster.png
