@@ -18,7 +18,7 @@ module Base
 		{
 			file = M870A1,
 			scale = 1.8200,
-			offset = 0.0000 0.1868 0.1374,
+			offset = 0.0000 0.0000 0.0000,
 		}
 
 		spawnOffsetY = 0.19392952,
