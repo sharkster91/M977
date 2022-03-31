@@ -109,7 +109,7 @@ module Base
 		{
 			front = true,
 			offset = -0.5802 -0.0062 1.9877,
-			radius = 0.60f,
+			radius = 0.50f,
 			width = 0.30f,
 		}
 
@@ -117,7 +117,7 @@ module Base
 		{
 			front = true,
 			offset = 0.6235 -0.0062 1.9877,
-			radius = 0.60f,
+			radius = 0.50f,
 			width = 0.30f,
 		}
 
@@ -125,7 +125,7 @@ module Base
 		{
 			front = false,
 			offset = -0.5864 0.0062 -2.0988,
-			radius = 0.60f,
+			radius = 0.50f,
 			width = 2.22f,
 		}
 
@@ -133,7 +133,7 @@ module Base
 		{
 			front = false,
 			offset = 0.6111 0.0062 -2.0988,
-			radius = 0.60f,
+			radius = 0.50f,
 			width = 2.22f,
 		}
 
