@@ -60,7 +60,6 @@ module Base
 			texture = Vehicles/Vehicle_HEMTTTractorGreen,
 		}
 
-		textureShadow = Vehicles/TractorShadow,
 		textureRust = Vehicles/Vehicle_HEMTTrust,
 		textureMask = Vehicles/Vehicle_HEMTTMASKBase,
 		textureLights = Vehicles/Vehicle_HEMTT_lightsbase,
@@ -78,25 +77,24 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-	 template! = HEMTTtruck,
-		extents = 1.4444 1.8148 5.9012,
+		extents = 1.4444 1.7901 5.9753,
 		mass = 1500,
-		physicsChassisShape = 1.4321 1.7901 6.1111,
-		centerOfMassOffset = 0.0000 0.9074 -0.0123,
+		physicsChassisShape = 1.4321 0.2222 5.9753,
+		centerOfMassOffset = 0.0000 0.1173 0.0000,
 		shadowExtents = 1.4936 5.8861,
 		shadowOffset = 0.0000 -0.0094,
 		engineForce = 10000,
 		engineQuality = 70,
 		engineLoudness = 100,
 		maxSpeed = 55f,
-		brakingForce = 35,
+		brakingForce = 15,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.2f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 185,
-		suspensionCompression = 3.83,
-		suspensionDamping = 3.88,
+		suspensionStiffness = 130,
+		suspensionCompression = 2.83,
+		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.2f,
 		wheelFriction = 1.8f,
@@ -193,7 +191,12 @@ module Base
 
 		area TruckBed
 		{
-			xywh = -0.9815 0.0556 0.5185 0.6049,
+			xywh = 0.0000 -1.3704 1.8519 3.5062,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -1.3704 1.8519 3.5062,
 		}
 
 		area TireFrontLeft
@@ -223,6 +226,15 @@ module Base
 		template = Engine,
 		template = Muffler,
 		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBedOpen,
+
+		part TruckBedOpen
+		{
+			container
+			{
+				capacity = 700,
+			}
+		}
 
 		part TruckBedOpen
 		{
@@ -397,43 +409,36 @@ module Base
 
 		physics box
 		{
-			offset = 0.0123 0.2469 0.0494,
-			extents = 1.3951 1.7284 5.8704,
+			offset = 0.0000 0.4938 1.1049,
+			extents = 1.4321 1.2840 3.7716,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.0741 0.0000,
+			extents = 1.4321 0.4444 5.9691,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 -0.2747 -1.1813,
+			offset = 0.0000 0.2160 -2.9506,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.3704,
+			offset = 0.0000 0.0000 3.1481,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
 
-	}
-		template vehicle HEMTTtruck
-    {
-        part TCLConfig
-        {
-            category = nodisplay,
-            table TCLConfig
-            {
-                disableOpenWindowParts
-                {
-                    FrontLeft = ATAProtectionSideLeft,
-                    FrontRight = ATAProtectionSideRight,
-                    RearLeft = ATAProtectionSleeper,
-                    RearRight = ATAProtectionSleeper,
-                }
-                airbrake = true,
-                trailerOutside = false,
-            }
-        }
+		attachment trailerTruck
+		{
+			offset = 0.0000 0.4074 -1.7469,
+			rotate = 0.0000 0.0000 0.0000,
+		}
 	}
 }
