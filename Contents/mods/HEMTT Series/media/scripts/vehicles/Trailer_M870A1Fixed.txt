@@ -5,7 +5,7 @@ module Base
         mesh = Vehicles/Trailer_M870A1Fixed,
         shader = vehicle_norandom_multiuv,
         invertX = FALSE,
-        scale = 0.05,
+        scale = 0.06,
     }
 	item ATSMegaTrunk
     {
@@ -84,7 +84,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.0000 -0.1500 4.1667,
+			offset = 0.0000 0.2333 1.8333,
 			radius = 0.5f,
 			width = 2.0f,
 		}
@@ -92,7 +92,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 0.0000 0.0500 -0.6000,
+			offset = 0.0000 0.4333 -2.9333,
 			radius = 0.7f,
 			width = 2.0f,
 		}
@@ -100,7 +100,7 @@ module Base
 		wheel RearLeft
 		{
 			front = true,
-			offset = 1.2500 0.0500 -2.5000,
+			offset = 1.2500 0.4333 -5.4667,
 			radius = 0.7f,
 			width = 0.5f,
 		}
@@ -108,7 +108,7 @@ module Base
 		wheel RearRight
 		{
 			front = true,
-			offset = -1.2500 0.0500 -2.5000,
+			offset = -1.2500 0.4333 -5.4667,
 			radius = 0.7f,
 			width = 0.5f,
 		}
@@ -264,21 +264,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9333 4.8833,
+			offset = 0.0000 1.3833 4.8833,
 			extents = 3.2833 1.5500 0.3667,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		physics box
 		{
-			offset = 0.0000 1.5667 -1.1000,
+			offset = 0.0000 1.9667 -1.1000,
 			extents = 3.2833 0.9833 11.7333,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailerTruck
 		{
-			offset = 0.0000 0.9833 10.8667,
+			offset = 0.0000 2.0000 13.2000,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
