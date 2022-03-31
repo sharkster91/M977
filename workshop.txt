@@ -1,29 +1,39 @@
 version=1
 title=1 HEMTT Series
 description=[b]Support our efforts to bring more military vehicles into PZ[/b]
-description=[url=https://www.buymeacoffee.com/cytt]cytt0rak[/url]
-description=[url=https://ko-fi.com/sharkmods]Shark[/url]
+description=[url=https://www.buymeacoffee.com/cytt][b]cytt0rak[/b][/url]
+description=[url=https://ko-fi.com/sharkmods][b]Shark[/b][/url]
 description=
-description=[h2][b]XM03 Fox[/b][/h2]
+description=[h2][b]The HEMTT Vehicle Series[/b][/h2]
 description=
-description=The [b]XM93 Fox[/b] is a CBRN (Chemical, Biological, Radiological, and Nuclear) reconnaissance imported from Germany as the [b]TPz Fuchs[/b] by Rheinmetall.
-description=The vehicle was imported from Germany for service prior to Operation: Desert Storm. The [b]XM93 Fox[/b] lost its X designation and began domestic contruction after the war as the [b]M93.[/b]
+description=The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck.[2] The M977 HEMTT first entered service in 1982 with the United States Army as a replacement for the M520 Goer.
+description=The HEMTT's objective is to provide heavy transport capabilities for supply and re-supply of combat vehicles and weapons systems. Compared to earlier generation 5-ton trucks in U.S. Army service it offers increased payload and mobility. The HEMTT is available in a variety of configurations, including cargo, tanker, tractor.
 description=
-description= The mod features two skins: Desert and Woodland.
+description=[b]Current HEMTT configurations (and trailer) in the mod are:[/b]
+description[list] 
+description=M977 Cargo
+description=M983 Tractor
+description=M978 Fuel Tanker
+description=M1220 LHS (Load Handling System)
+description=M870A1 Trailer
+description[/list]
+description=
+description=[b]The mod features three skins: Woodland, Green, and Desert.[/b]
 description=
 description=[h2][b]Pros:[/b][/h2]
 description=[list]
-description=[*]Armored amd well protected
-description=[*]Large amount of interior storage space + four seats
+description=[*]Moderated well protected
+description=[*]
 description=[*]Can take a considerable beating
 description=[/list]
 description=[h2][b]Cons:[/b][/h2]
 description=[list]
-description=[*]Not suited for tight environments
-description=[*]Very rare
+description=[*]Massive
+description=[*]Navigating tighter and contested areas may prove to be difficult
 description=[*]Not very manueverable (Not entirely fixable on our end)
 description=[/list]
+description=[h2][b]HEMTT Series vehicles can be found scattered around the map in areas of military interest.[/b][/h2]
 description=
-description=[h2][b]Two examples can be found at the Secret Base in Rosewood and East of the Military Perimeter near Louisville.[/b][/h2]
+description=[h3]Note: The vehicles have static center wheels due to PZ limitations only correctable by the developers. They will remain so until they add official support for more wheels (more than 4) as it is currently impossible without "pseudo wheels) that add no physics support.[/h3] 
 tags=
 visibility=public
