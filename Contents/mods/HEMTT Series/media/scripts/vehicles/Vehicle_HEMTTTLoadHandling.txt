@@ -55,12 +55,10 @@ module Base
 			texture = Vehicles/Vehicle_HEMTTLoadHandlingDesert,
 		}
 
-
 		skin
 		{
 			texture = Vehicles/Vehicle_HEMTTLoadHandlingGreen,
 		}
-
 
 		textureRust = Vehicles/Vehicle_HEMTTrust,
 		textureMask = Vehicles/Vehicle_HEMTTMASKBase,
@@ -79,7 +77,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		 template! = HEMTTtruck,
+		template! = HEMTTtruck,
 		extents = 1.4444 1.8148 5.9012,
 		mass = 1500,
 		physicsChassisShape = 1.4321 1.7901 6.1111,
@@ -197,6 +195,11 @@ module Base
 			xywh = -0.9815 0.0556 0.5185 0.6049,
 		}
 
+		area TruckBed
+		{
+			xywh = -0.9815 0.0556 0.5185 0.6049,
+		}
+
 		area TireFrontLeft
 		{
 			xywh = -0.7778 0.0000 0.0000 0.0000,
@@ -224,6 +227,51 @@ module Base
 		template = Engine,
 		template = Muffler,
 		template = Trunk/part/TruckBedOpen,
+        
+		part DoorRear
+        {
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    item
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 600,
+                skills = Mechanics:8,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Door,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    item
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+
+                time = 600,
+                skills = Mechanics:6,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Door,
+            }
+        }
 
 		part TruckBedOpen
 		{
@@ -288,6 +336,7 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRear,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Windshield/part/WindshieldRear,
@@ -403,6 +452,34 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
+		item HEMTTCargoContainer
+		{
+			DisplayCategory = VehicleMaintenance,
+			Weight    =    40.0,
+			Type    =    Normal,
+			DisplayName    =    CargoContainer,
+			Icon    =    CarTrunk,
+			VehicleType =   1,
+			MaxCapacity = 2000,
+			ConditionAffectsCapacity = false,
+			ConditionMax = 100,
+			ChanceToSpawnDamaged = 0,
+			MechanicsItem = FALSE,
+		}
+
+		part TruckBed
+		{
+			mechanicRequireKey = false,
+			specificItem = false,
+			itemType = Base.HEMTTCargoContainer,
+
+			container
+			{
+				conditionAffectsCapacity = false,
+				capacity = 2000,
+			}
+		}
+
 		attachment trailer
 		{
 			offset = 0.0000 -0.2747 -1.1813,
@@ -416,9 +493,8 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
-
 	}
-		template vehicle HEMTTtruck
+	template vehicle HEMTTtruck
     {
         part TCLConfig
         {
