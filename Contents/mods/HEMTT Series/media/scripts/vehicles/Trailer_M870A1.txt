@@ -28,6 +28,7 @@ module Base
 			texture = Vehicles/Trailer_M870A1,
 		}
 
+		textureShadow = Vehicles/trailerShadow,
 		textureMask = Vehicles/vehicle_utilitytrailer_mask,
 		textureLights = Vehicles/vehicle_utilitytrailer_lights,
 		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,

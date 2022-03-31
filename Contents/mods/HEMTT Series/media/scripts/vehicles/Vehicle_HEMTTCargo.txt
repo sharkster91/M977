@@ -78,6 +78,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
+		 template! = HEMTTtruck,
 		extents = 1.4444 1.8148 5.9012,
 		mass = 1500,
 		physicsChassisShape = 1.4321 1.7901 6.1111,
@@ -137,7 +138,6 @@ module Base
 		}
 
 		template = PassengerSeat2,
-		
 
 		passenger FrontLeft
 		{
@@ -193,12 +193,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -1.3704 1.8519 3.5062,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -1.3704 1.8519 3.5062,
+			xywh = -0.9815 0.0556 0.5185 0.6049,
 		}
 
 		area TireFrontLeft
@@ -228,16 +223,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 		template = Trunk/part/TruckBedOpen,
-		template = Trunk/part/TruckBedOpen,
-
-
-		part TruckBedOpen
-		{
-			container
-			{
-				capacity = 700,
-			}
-		}
 
 		part TruckBedOpen
 		{
@@ -421,7 +406,7 @@ module Base
 		{
 			offset = 0.0000 -0.2747 -1.1813,
 			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1,
+			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
@@ -430,5 +415,25 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
+
+	}
+		template vehicle HEMTTtruck
+    {
+        part TCLConfig
+        {
+            category = nodisplay,
+            table TCLConfig
+            {
+                disableOpenWindowParts
+                {
+                    FrontLeft = ATAProtectionSideLeft,
+                    FrontRight = ATAProtectionSideRight,
+                    RearLeft = ATAProtectionSleeper,
+                    RearRight = ATAProtectionSleeper,
+                }
+                airbrake = true,
+                trailerOutside = false,
+            }
+        }
 	}
 }
