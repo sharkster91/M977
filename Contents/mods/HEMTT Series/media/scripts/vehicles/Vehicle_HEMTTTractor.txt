@@ -77,24 +77,24 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 1.4444 1.8148 5.9012,
+		extents = 1.4444 1.7901 5.9753,
 		mass = 1500,
-		physicsChassisShape = 1.4321 1.7901 6.1111,
-		centerOfMassOffset = 0.0000 0.9074 -0.0123,
+		physicsChassisShape = 1.4321 0.2222 5.9753,
+		centerOfMassOffset = 0.0000 0.1173 0.0000,
 		shadowExtents = 1.4936 5.8861,
 		shadowOffset = 0.0000 -0.0094,
 		engineForce = 10000,
 		engineQuality = 70,
 		engineLoudness = 100,
 		maxSpeed = 55f,
-		brakingForce = 35,
+		brakingForce = 15,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.2f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 185,
-		suspensionCompression = 3.83,
-		suspensionDamping = 3.88,
+		suspensionStiffness = 130,
+		suspensionCompression = 2.83,
+		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.2f,
 		wheelFriction = 1.8f,
@@ -136,7 +136,6 @@ module Base
 		}
 
 		template = PassengerSeat2,
-		
 
 		passenger FrontLeft
 		{
@@ -228,7 +227,6 @@ module Base
 		template = Muffler,
 		template = Trunk/part/TruckBedOpen,
 		template = Trunk/part/TruckBedOpen,
-
 
 		part TruckBedOpen
 		{
@@ -411,21 +409,28 @@ module Base
 
 		physics box
 		{
-			offset = 0.0123 0.2469 0.0494,
-			extents = 1.3951 1.7284 5.8704,
+			offset = 0.0000 0.4938 1.1049,
+			extents = 1.4321 1.2840 3.7716,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.0741 0.0000,
+			extents = 1.4321 0.4444 5.9691,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 -0.2747 -1.1813,
+			offset = 0.0000 0.2160 -2.9506,
 			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1,
+			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.3704,
+			offset = 0.0000 0.0000 3.1481,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
