@@ -88,7 +88,7 @@ module Base
 		engineQuality = 70,
 		engineLoudness = 100,
 		maxSpeed = 55f,
-		brakingForce = 30,
+		brakingForce = 35,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.2f,
 		steeringIncrement = 0.03,
@@ -412,6 +412,13 @@ module Base
 			offset = 0.0123 0.2469 0.0494,
 			extents = 1.3951 1.7284 5.8704,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.1813,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1,
 		}
 
 		attachment trailerfront

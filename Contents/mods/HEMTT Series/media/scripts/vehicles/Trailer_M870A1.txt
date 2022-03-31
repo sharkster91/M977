@@ -17,8 +17,8 @@ module Base
 		model
 		{
 			file = M870A1,
-			scale = 1.8200,
-			offset = 0.0000 0.0000 0.0000,
+			scale = 1.3300,
+			offset = 0.1504 0.5489 -0.3609,
 		}
 
 		spawnOffsetY = 0.19392952,
@@ -35,10 +35,12 @@ module Base
 		textureDamage1Shell = Vehicles/Veh_Damage1,
 		textureDamage2Shell = Vehicles/Veh_Damage2,
 		textureRust = Vehicles/Veh_Rust,
-		extents = 0.6264 0.2198 0.9341,
+		extents = 1.9549 0.2406 9.1729,
 		mass = 200,
-		physicsChassisShape = 0.6264 0.2198 0.9341,
-		centerOfMassOffset = 0.0000 0.2198 -0.1813,
+		physicsChassisShape = 1.9549 0.2406 6.0451,
+		centerOfMassOffset = 0.0000 0.2256 -0.1805,
+		shadowExtents = 1.9317 9.2471,
+		shadowOffset = 0.0000 -0.1813,
 		engineForce = 3600,
 		engineQuality = 60,
 		engineLoudness = 55,
@@ -81,7 +83,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.3736 -0.1868 -0.3022,
+			offset = 0.5489 -0.5940 2.7895,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -89,29 +91,57 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.3736 -0.1868 -0.3022,
+			offset = -0.8647 -0.5940 2.7744,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.5564 -0.5940 -1.4436,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -0.8647 -0.5940 -1.4286,
 			radius = 0.15f,
 			width = 0.2f,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -0.3132 1.5055 1.7143,
+			xywh = 0.0000 -0.3158 1.5188 1.7444,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 0.5330 -0.1703 0.4396 0.4725,
+			xywh = 0.5338 -0.1654 0.4511 0.4812,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.5330 -0.1703 0.4396 0.4725,
+			xywh = -0.5338 -0.1654 0.4511 0.4812,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.5338 -0.1654 0.4511 0.4812,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.5338 -0.1654 0.4511 0.4812,
 		}
 
 		template = Trunk/part/TrailerTrunk,
 		template = Tire/part/TireFrontLeft,
 		template = Tire/part/TireFrontRight,
+		template = Tire/part/TireRearLeft,
+		template = Tire/part/TireRearRight,
 
 		part TireFrontLeft
 		{
@@ -129,12 +159,28 @@ module Base
 			}
 		}
 
+		part TireRearLeft
+		{
+			table install
+			{
+				requireInstalled = SuspensionFrontLeft,
+			}
+		}
+
+		part TireRearRight
+		{
+			table install
+			{
+				requireInstalled = SuspensionFrontRight,
+			}
+		}
+
 		template = Suspension/part/SuspensionFrontLeft,
 		template = Suspension/part/SuspensionFrontRight,
 
 		attachment trailer
 		{
-			offset = 0.0000 -0.0879 0.7747,
+			offset = -0.1527 0.0000 5.1985,
 			rotate = 0.0000 0.0000 0.0000,
 			canAttach = trailer,
 			updateconstraint = false,
