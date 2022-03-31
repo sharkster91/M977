@@ -87,14 +87,14 @@ module Base
 		engineQuality = 70,
 		engineLoudness = 100,
 		maxSpeed = 55f,
-		brakingForce = 15,
+		brakingForce = 35,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.2f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 130,
-		suspensionCompression = 2.83,
-		suspensionDamping = 2.88,
+		suspensionStiffness = 185,
+		suspensionCompression = 3.83,
+		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.2f,
 		wheelFriction = 1.8f,
@@ -409,15 +409,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.4938 1.1049,
-			extents = 1.4321 1.2840 3.7716,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		physics box
-		{
-			offset = 0.0000 0.0741 0.0000,
-			extents = 1.4321 0.4444 5.9691,
+			offset = 0.0123 0.2469 0.0494,
+			extents = 1.3951 1.7284 5.8704,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
