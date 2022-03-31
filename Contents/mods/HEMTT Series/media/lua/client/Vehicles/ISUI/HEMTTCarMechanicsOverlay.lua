@@ -2,6 +2,7 @@ ISCarMechanicsOverlay.CarList["Base.HEMTTCargo"] = {imgPrefix = "hemttcargo_", x
 ISCarMechanicsOverlay.CarList["Base.HEMTTFuel"] = {imgPrefix = "hemttfuel_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.HEMTTLoadHandling"] = {imgPrefix = "hemttload_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.HEMTTTractor"] = {imgPrefix = "hemtttractor_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.M870A1"] = {imgPrefix = "m870a1_", x=0,y=0};
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["hemttcargo_"] = {img="battery", x=0,y=0,x2=0,y2=0};
