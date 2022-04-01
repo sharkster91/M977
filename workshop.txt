@@ -1,12 +1,12 @@
 version=1
-title=1 HEMTT Series
+title=HEMTT Vehicle Series
 description=[b]Support our efforts to bring more military vehicles into PZ[/b]
 description=[url=https://www.buymeacoffee.com/cytt][b]cytt0rak[/b][/url]
 description=[url=https://ko-fi.com/sharkmods][b]Shark[/b][/url]
 description=
 description=[h2][b]The HEMTT Vehicle Series[/b][/h2]
 description=
-description=The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck.[2] The M977 HEMTT first entered service in 1982 with the United States Army as a replacement for the M520 Goer.
+description=The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck. The M977 HEMTT first entered service in 1982 with the United States Army as a replacement for the M520 Goer.
 description=The HEMTT's objective is to provide heavy transport capabilities for supply and re-supply of combat vehicles and weapons systems. Compared to earlier generation 5-ton trucks in U.S. Army service it offers increased payload and mobility. The HEMTT is available in a variety of configurations, including cargo, tanker, tractor.
 description=
 description=[h2][b]The mod is currently work in progress as we aim to establish an entire fleet of trailers plus further refine the vehicles themselves over time.[/b][/h2]
@@ -34,6 +34,7 @@ description=[*]Massive
 description=[*]Navigating tighter and contested areas may prove to be difficult for some
 description=[*]Can get bogged down 
 description=[/list]
+description=
 description=[h2][b]HEMTT variants can be found scattered around the map in areas of military interest as well as areas such as train yards.[/b][/h2]
 description=
 description=[h2]Future plans:
@@ -42,7 +43,8 @@ description=[*]Vehicle fortifying
 description=[*]Animated doors + increased function
 description=[*]More trailers to increase capabilities
 description=[/list]
-description=[h3]Note: The vehicles have static center wheels due to PZ limitations only correctable by the developers. We wanted the vehicle to be as controllable as possible[/h2] 
+description=
+description=[h3]Note: The vehicles have static center wheels due to PZ limitations only correctable by the developers. We wanted the vehicle to be as controllable as possible[/h3] 
 description [h3]They will remain so until they add official support for more wheels (more than 4) as it is currently impossible without "pseudo wheels) that add no physics support.[/h3] 
 tags=
 visibility=public
