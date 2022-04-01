@@ -7,29 +7,30 @@ module Base
         invertX = FALSE,
         scale = 0.06,
     }
-	item ATSMegaTrunk
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight    =    40.0,
-        Type    =    Normal,
-        DisplayName    =    Mega Trunk,
-        Icon    =    CarTrunk,
-        VehicleType =   1,
-        MaxCapacity = 1300,
-        ConditionAffectsCapacity = true,
-        ConditionMax = 100,
-        ChanceToSpawnDamaged = 10,
-        MechanicsItem = TRUE,
-    }
-	fixing Fix Mega Trunk Welding
-    {
-       Require : ATSMegaTrunk,
-       GlobalItem : BlowTorch=10,
-       ConditionModifier : 1.1,
-
-       Fixer : SheetMetal=2; MetalWelding=4;Mechanics=3,
-       Fixer : SmallSheetMetal=8; MetalWelding=4;Mechanics=3,
-    }
+	model M870A1Fixedfrontwheelleft
+	{
+		mesh = vehicles/Vehicle_M870A1Fixed_WheelLeft,
+		texture = vehicles/Trailer_M870A1Wheels,
+		shader = vehiclewheel,
+	}
+	model M870A1Fixedfrontwheelright
+	{
+		mesh = vehicles/Vehicle_M870A1Fixed_WheelRight,
+		texture = vehicles/Trailer_M870A1Wheels,
+		shader = vehiclewheel,
+	}
+	model M870A1Fixedbackwheelleft
+	{
+		mesh = vehicles/Vehicle_M870A1Fixed_WheelLeft,
+		texture = vehicles/Trailer_M870A1Wheels,
+		shader = vehiclewheel,
+	}
+	model M870A1Fixedbackwheelright
+	{
+		mesh = vehicles/Vehicle_M870A1Fixed_WheelRight,
+		texture = vehicles/Trailer_M870A1Wheels,
+		shader = vehiclewheel,
+	}
 	vehicle M870A1Fixed
 	{
 		mechanicType = 2,
@@ -49,19 +50,19 @@ module Base
 			texture = Vehicles/Trailer_M870A1,
 		}
 
-		textureMask = Trailers/TSMegatrailer_mask,
-		textureLights = Trailers/TSMegatrailer_light,
-		textureRust = Trailers/TSMegatrailer_rust,
-		textureDamage1Shell = Trailers/TSMegatrailer_rust,
-		textureDamage2Shell = Trailers/TSMegatrailer_rust,
-		textureDamage1Overlay = Trailers/TSMegatrailer_rust,
-		textureDamage2Overlay = Trailers/TSMegatrailer_rust,
-		extents = 3.4333 3.4333 7.5000,
+		textureMask = Vehicles/vehicle_utilitytrailer_mask,
+		textureLights = Vehicles/vehicle_utilitytrailer_light,
+		textureRust = Vehicles/vehicle_utilitytrailer_rust,
+		textureDamage1Shell = Vehicles/vehicle_utilitytrailer_damage,
+		textureDamage2Shell = Vehicles/vehicle_utilitytrailer_damage2,
+		textureDamage1Overlay = Vehicles/vehicle_utilitytrailer_blood,
+		textureDamage2Overlay = Vehicles/vehicle_utilitytrailer_blood,
+		extents = 4.1667 3.4333 24.2333,
 		mass = 300,
 		physicsChassisShape = 3.4333 3.4333 9.7333,
 		centerOfMassOffset = 0.0000 2.7333 1.0333,
-		shadowExtents = 3.7385 16.4923,
-		shadowOffset = 0.0000 1.0308,
+		shadowExtents = 4.0052 23.7923,
+		shadowOffset = 0.0000 1.2975,
 		engineForce = 4000,
 		engineQuality = 80,
 		engineLoudness = 110,
@@ -85,7 +86,7 @@ module Base
 		{
 			front = true,
 			offset = 0.0000 0.2333 1.8333,
-			radius = 0.5f,
+			radius = 0.7f,
 			width = 2.0f,
 		}
 
@@ -146,7 +147,7 @@ module Base
 
 			model InflatedTirePlusWheel
 			{
-				file = ATAPetyarbuilt_WheelRear_L,
+				file = M870A1Fixedfrontwheelleft,
 				offset = 1.3 0.0 0.0,
 			}
 		}
@@ -155,7 +156,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ATAPetyarbuilt_WheelRear_R,
+				file = M870A1Fixedfrontwheelright,
 				offset = -1.3 0.0 0.0,
 			}
 		}
@@ -164,7 +165,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ATAPetyarbuilt_WheelRear_L,
+				file = M870A1Fixedfrontwheelleft,
 			}
 		}
 
@@ -172,14 +173,13 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ATAPetyarbuilt_WheelRear_R,
+				file = M870A1Fixedfrontwheelright,
 			}
 		}
 
 		template = Suspension,
 		template = Headlight/part/HeadlightRearLeft,
 		template = Headlight/part/HeadlightRearRight,
-		template = ATASpareWheel/part/ATASpareWheel,
 
 		part Suspension*
 		{
@@ -278,7 +278,7 @@ module Base
 
 		attachment trailerTruck
 		{
-			offset = 0.0000 2.0000 13.2000,
+			offset = 0.0000 2.0000 12.5000,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
