@@ -215,6 +215,11 @@ module Base
 			xywh = -0.9568 0.0000 0.4815 1.0000,
 		}
 
+		area GasTankOut
+		{
+			xywh = -0.9568 0.0000 0.4815 1.0000,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GasTank,
@@ -222,6 +227,13 @@ module Base
 		template = Engine,
 		template = Muffler,
 		template = TrunkHEMTT,
+		template = TruckTank/part/1000FuelTank,
+
+		part 1000FuelTank
+		{
+			area = GasTankOut,
+			
+		}
 
 		part SideContainer
 		{
