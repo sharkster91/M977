@@ -210,12 +210,26 @@ module Base
 			xywh = -0.7222 -2.3704 0.0000 0.0000,
 		}
 
+		area SideContainer
+		{
+			xywh = -0.9568 0.0000 0.4815 1.0000,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+		template = TrunkHEMTT,
+
+		part SideContainer
+		{
+			container
+			{
+				capacity = 30,
+			}
+		}
 
 		part Muffler
 		{

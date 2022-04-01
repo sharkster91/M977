@@ -1,0 +1,27 @@
+module Base
+{
+	template vehicle TrunkHEMTT
+	{
+		
+		/* FIXME: This should be "TruckBed" */
+		part SideContainer
+		{
+			area = SideContainer,
+			category = bodywork,
+			itemType = BBase.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = true,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		}
+	}
+}
