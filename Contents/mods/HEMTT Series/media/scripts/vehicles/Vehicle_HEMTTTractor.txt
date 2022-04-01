@@ -99,8 +99,8 @@ module Base
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.2f,
 		wheelFriction = 1.8f,
-		frontEndHealth = 1500,
-		rearEndHealth = 1500,
+		frontEndHealth = 150000,
+		rearEndHealth = 150000,
 		isSmallVehicle = false,
 		seats = 2,
 
