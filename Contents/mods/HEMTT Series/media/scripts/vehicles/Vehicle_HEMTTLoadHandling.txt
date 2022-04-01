@@ -61,8 +61,8 @@ module Base
 		}
 
 		textureRust = Vehicles/Vehicle_HEMTTrust,
-		textureMask = Vehicles/Vehicle_HEMTTMASKBase,
-		textureLights = Vehicles/Vehicle_HEMTT_lightsbase,
+		textureMask = Vehicles/Vehicle_HEMTTMASKCargo,
+		textureLights = Vehicles/Vehicle_HEMTT_lightscargo,
 		textureDamage1Shell = Vehicles/Vehicle_HEMTTdamage,
 		textureDamage2Shell = Vehicles/Vehicle_HEMTTdamage2,
 		textureDamage1Overlay = Vehicles/Vehicle_HEMTTBLOOD,
@@ -192,7 +192,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.7840 1.3580 0.6543,
+			xywh = 0.0000 -3.8025 1.5926 1.5432,
 		}
 
 		area TireFrontLeft
@@ -226,7 +226,7 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBed,
 		template = TrunkHEMTT,
 
 		part SideContainer
@@ -237,56 +237,11 @@ module Base
 			}
 		}
 
-		part TruckBedOpen
+		part TruckBed
 		{
 			container
 			{
 				capacity = 2000,
-			}
-		}
-
-		part DoorRear
-		{
-			mechanicRequireKey = false,
-
-			table install
-			{
-				items
-				{
-					item
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-
-				time = 600,
-				skills = Mechanics:8,
-				recipes = Advanced Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Door,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					item
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-
-				time = 600,
-				skills = Mechanics:6,
-				recipes = Advanced Mechanics,
-				test = Vehicles.UninstallTest.Default,
-				complete = Vehicles.UninstallComplete.Door,
 			}
 		}
 
@@ -345,7 +300,6 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRear,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Windshield/part/WindshieldRear,
@@ -475,7 +429,8 @@ module Base
 			zoffset = 1.0000,
 		}
 	}
-	{
+	template vehicle HEMTTtruck
+    {
         part TCLConfig
         {
             category = nodisplay,
