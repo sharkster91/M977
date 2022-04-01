@@ -231,7 +231,6 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		template = Trunk/part/TruckBedOpen,
 		template = TrunkHEMTT,
 
 		part SideContainer
@@ -241,15 +240,6 @@ module Base
 				capacity = 30,
 			}
 		}
-
-		part TruckBedOpen
-		{
-			container
-			{
-				capacity = 700,
-			}
-		}
-
 
 		part Muffler
 		{
