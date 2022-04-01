@@ -172,7 +172,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 2.6543 1.3951 0.9136,
+			xywh = 1.1667 1.5926 0.8889 0.9136,
 		}
 
 		area SeatFrontLeft
