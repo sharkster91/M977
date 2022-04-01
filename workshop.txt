@@ -17,7 +17,7 @@ description=M977 Cargo
 description=M983 Tractor
 description=M978 Fuel Tanker
 description=M1220 LHS (Load Handling System)
-description=M870A1 Trailer
+description=M870A1 Trailer (Further expansion ongoing)
 description[/list]
 description=
 description=[b]The mod features three skins: Woodland, Green, and Desert.[/b]
