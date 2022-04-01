@@ -2,7 +2,7 @@ module Base
 {
 	model M870A1
     {
-        mesh = Vehicles/Trailer_M870A1Fixed,
+        mesh = Vehicles/Trailer_M870A1,
         shader = vehicle_norandom_multiuv,
         invertX = FALSE,
         scale = 0.06,
