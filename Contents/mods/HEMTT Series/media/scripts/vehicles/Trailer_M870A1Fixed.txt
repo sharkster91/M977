@@ -50,6 +50,7 @@ module Base
 			texture = Vehicles/Trailer_M870A1,
 		}
 
+		textureShadow = Vehicles/trailerShadow,
 		textureMask = Vehicles/vehicle_utilitytrailer_mask,
 		textureLights = Vehicles/vehicle_utilitytrailer_light,
 		textureRust = Vehicles/vehicle_utilitytrailer_rust,
@@ -61,8 +62,8 @@ module Base
 		mass = 300,
 		physicsChassisShape = 3.4333 3.4333 9.7333,
 		centerOfMassOffset = 0.0000 2.7333 1.0333,
-		shadowExtents = 4.0052 23.7923,
-		shadowOffset = 0.0000 1.2975,
+		shadowExtents = 10.2052 23.7923,
+		shadowOffset = 0.0000 0.7642,
 		engineForce = 4000,
 		engineQuality = 80,
 		engineLoudness = 110,
@@ -210,7 +211,6 @@ module Base
 			}
 		}
 
-		
 		physics box
 		{
 			offset = 0.0000 1.3833 4.8833,
