@@ -60,7 +60,6 @@ module Base
 			texture = Vehicles/Vehicle_HEMTTCargoDesert,
 		}
 
-
 		textureRust = Vehicles/Vehicle_HEMTTrust,
 		textureMask = Vehicles/Vehicle_HEMTTMASKCargo,
 		textureLights = Vehicles/Vehicle_HEMTT_lightscargo,
@@ -193,7 +192,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = -0.9815 0.0556 0.5185 0.6049,
+			xywh = 0.0000 -1.1852 1.9136 3.9630,
 		}
 
 		area TireFrontLeft
@@ -222,13 +221,13 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBed,
 
-		part TruckBedOpen
+		part TruckBed
 		{
 			container
 			{
-				capacity = 30,
+				capacity = 2000,
 			}
 		}
 
@@ -415,9 +414,8 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
-
 	}
-		template vehicle HEMTTtruck
+	template vehicle HEMTTtruck
     {
         part TCLConfig
         {
