@@ -9,6 +9,8 @@ description=
 description=The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck.[2] The M977 HEMTT first entered service in 1982 with the United States Army as a replacement for the M520 Goer.
 description=The HEMTT's objective is to provide heavy transport capabilities for supply and re-supply of combat vehicles and weapons systems. Compared to earlier generation 5-ton trucks in U.S. Army service it offers increased payload and mobility. The HEMTT is available in a variety of configurations, including cargo, tanker, tractor.
 description=
+description=[h2][b]The mod is currently work in progress as we aim to establish an entire fleet of trailers plus further refine the vehicles themselves over time.[/b][/h2]
+description=
 description=[b]Current HEMTT configurations (and trailer) in the mod are:[/b]
 description[list] 
 description=M977 Cargo
