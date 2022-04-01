@@ -1,5 +1,6 @@
 version=1
-title=HEMTT Vehicle Series
+id=2787720683
+title=The HEMTT Vehicle Series
 description=[b]Support our efforts to bring more military vehicles into PZ[/b]
 description=[url=https://www.buymeacoffee.com/cytt][b]cytt0rak[/b][/url]
 description=[url=https://ko-fi.com/sharkmods][b]Shark[/b][/url]
@@ -12,13 +13,11 @@ description=
 description=[h2][b]The mod is currently work in progress as we aim to establish an entire fleet of trailers plus further refine the vehicles themselves over time.[/b][/h2]
 description=
 description=[b]Current HEMTT configurations (and trailer) in the mod are:[/b]
-description[list] 
 description=[*]M977 Cargo
 description=[*]M983 Tractor
 description=[*]M978 Fuel Tanker
 description=[*]M1220 LHS (Load Handling System)
 description=[*]M870A1 Trailer (Further expansion ongoing)
-description[/list]
 description=
 description=[b]The mod features three skins: Woodland, Green, and Desert.[/b]
 description=
@@ -32,7 +31,7 @@ description=[h2][b]Cons:[/b][/h2]
 description=[list]
 description=[*]Massive
 description=[*]Navigating tighter and contested areas may prove to be difficult for some
-description=[*]Can get bogged down 
+description=[*]Can get bogged down
 description=[/list]
 description=
 description=[h2][b]HEMTT variants can be found scattered around the map in areas of military interest as well as areas such as train yards.[/b][/h2]
@@ -44,7 +43,6 @@ description=[*]Animated doors + increased function
 description=[*]More trailers to increase capabilities
 description=[/list]
 description=
-description=[h3]Note: The vehicles have static center wheels due to PZ limitations only correctable by the developers. We wanted the vehicle to be as controllable as possible[/h3] 
-description [h3]They will remain so until they add official support for more wheels (more than 4) as it is currently impossible without "pseudo wheels) that add no physics support.[/h3] 
+description=[h3]Note: The vehicles have static center wheels due to PZ limitations only correctable by the developers. We wanted the vehicle to be as controllable as possible[/h3]
 tags=
-visibility=public
+visibility=friendsOnly
