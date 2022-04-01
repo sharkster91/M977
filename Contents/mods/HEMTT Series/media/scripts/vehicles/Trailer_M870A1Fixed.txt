@@ -116,7 +116,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -7.5000 3.4333 1.2000,
+			xywh = 0.0000 -1.4333 7.1667 18.2333,
 		}
 
 		area TireFrontLeft
@@ -200,68 +200,17 @@ module Base
 		template = Brake/part/BrakeFrontRight,
 		template = Brake/part/BrakeRearLeft,
 		template = Brake/part/BrakeRearRight,
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
 
-		part TruckBed
+		part TruckBedOpen
 		{
-			mechanicRequireKey = false,
-			specificItem = false,
-			itemType = Base.ATSMegaTrunk,
-
 			container
 			{
-				conditionAffectsCapacity = true,
-				capacity = 1300,
+				capacity = 3000,
 			}
 		}
 
-		template = Door/part/DoorRear,
-
-		part DoorRear
-		{
-			mechanicRequireKey = false,
-
-			table install
-			{
-				items
-				{
-					item
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-
-				time = 600,
-				skills = Mechanics:8,
-				recipes = Advanced Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Door,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					item
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-
-				time = 600,
-				skills = Mechanics:6,
-				recipes = Advanced Mechanics,
-				test = Vehicles.UninstallTest.Default,
-				complete = Vehicles.UninstallComplete.Door,
-			}
-		}
-
+		
 		physics box
 		{
 			offset = 0.0000 1.3833 4.8833,
