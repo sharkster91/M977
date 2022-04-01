@@ -68,12 +68,12 @@ module Base
 		textureDamage1Overlay = Vehicles/Vehicle_HEMTTBLOOD,
 		textureDamage2Overlay = Vehicles/Vehicle_HEMTTBLOOD,
 
-		textureShadow =
+		sound
 		{
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+			horn = HEMTTHorn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
