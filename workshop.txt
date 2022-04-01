@@ -9,13 +9,15 @@ description=
 description=The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck.[2] The M977 HEMTT first entered service in 1982 with the United States Army as a replacement for the M520 Goer.
 description=The HEMTT's objective is to provide heavy transport capabilities for supply and re-supply of combat vehicles and weapons systems. Compared to earlier generation 5-ton trucks in U.S. Army service it offers increased payload and mobility. The HEMTT is available in a variety of configurations, including cargo, tanker, tractor.
 description=
+description=[h2][b]The mod is currently work in progress as we aim to establish an entire fleet of trailers plus further refine the vehicles themselves over time.[/b][/h2]
+description=
 description=[b]Current HEMTT configurations (and trailer) in the mod are:[/b]
 description[list] 
 description=M977 Cargo
 description=M983 Tractor
 description=M978 Fuel Tanker
 description=M1220 LHS (Load Handling System)
-description=M870A1 Trailer
+description=M870A1 Trailer (Further expansion ongoing)
 description[/list]
 description=
 description=[b]The mod features three skins: Woodland, Green, and Desert.[/b]
@@ -32,7 +34,7 @@ description=[*]Massive
 description=[*]Navigating tighter and contested areas may prove to be difficult
 description=[*]Not very manueverable (Not entirely fixable on our end)
 description=[/list]
-description=[h2][b]HEMTT Series vehicles can be found scattered around the map in areas of military interest.[/b][/h2]
+description=[h2][b]HEMTT variants can be found scattered around the map in areas of military interest as well as areas such as train yards.[/b][/h2]
 description=
 description=[h3]Note: The vehicles have static center wheels due to PZ limitations only correctable by the developers. They will remain so until they add official support for more wheels (more than 4) as it is currently impossible without "pseudo wheels) that add no physics support.[/h3] 
 tags=
