@@ -190,11 +190,6 @@ module Base
 			xywh = 0.7469 0.0494 0.0000 0.0000,
 		}
 
-		area TruckBed
-		{
-			xywh = -0.9815 0.0556 0.5185 0.6049,
-		}
-
 		area TireFrontLeft
 		{
 			xywh = -0.7778 0.0000 0.0000 0.0000,
@@ -221,15 +216,6 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		template = Trunk/part/TruckBedOpen,
-
-		part TruckBedOpen
-		{
-			container
-			{
-				capacity = 30,
-			}
-		}
 
 		part Muffler
 		{
