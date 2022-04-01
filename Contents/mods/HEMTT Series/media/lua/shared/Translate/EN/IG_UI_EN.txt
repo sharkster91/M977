@@ -3,4 +3,5 @@ IG_UI_EN = {
     IGUI_VehicleNameHEMTTFuel = "M978 HEMTT",
     IGUI_VehicleNameHEMTTTractor = " M983 HEMTT",
     IGUI_VehicleNameHEMTTTLoadHandling = " M1120 HEMTT",
+    IGUI_VehicleNameHEMTTTLoadHandling = " M870A1 Trailer",
 }
