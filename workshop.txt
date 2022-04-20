@@ -5,6 +5,8 @@ description=[b]Support our efforts to bring more military vehicles into PZ[/b]
 description=[url=https://www.buymeacoffee.com/cytt][b]cytt0rak[/b][/url]
 description=[url=https://ko-fi.com/sharkmods][b]Shark[/b][/url]
 description=
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=
 description=[h2][b]The HEMTT Vehicle Series[/b][/h2]
 description=
 description=The Heavy Expanded Mobility Tactical Truck (HEMTT) is an eight-wheel drive, diesel-powered, 10-short-ton (9,100 kg) tactical truck. The M977 HEMTT first entered service in 1982 with the United States Army as a replacement for the M520 Goer.
