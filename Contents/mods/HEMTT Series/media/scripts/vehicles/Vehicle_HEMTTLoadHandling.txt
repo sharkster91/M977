@@ -77,12 +77,13 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
+
 		template! = HEMTTtruck,
-		extents = 1.4444 1.8148 5.9012,
+		extents = 1.4444 0.9630 5.9753,
 		mass = 1500,
-		physicsChassisShape = 1.4321 1.7901 6.1111,
-		centerOfMassOffset = 0.0000 0.9074 -0.0123,
-		shadowExtents = 1.4936 5.8861,
+		physicsChassisShape = 1.4321 0.9630 5.9753,
+		centerOfMassOffset = 0.0000 0.4938 0.0000,
+		shadowExtents = 1.4936 6.1145,
 		shadowOffset = 0.0000 -0.0094,
 		engineForce = 10000,
 		engineQuality = 70,
@@ -99,8 +100,8 @@ module Base
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.2f,
 		wheelFriction = 1.8f,
-		frontEndHealth = 150000,
-		rearEndHealth = 150000,
+		frontEndHealth = 9500,
+		rearEndHealth = 8500,
 		isSmallVehicle = false,
 		seats = 2,
 
@@ -140,7 +141,6 @@ module Base
 
 		passenger FrontLeft
 		{
-
 			showPassenger = true,
 			hasRoof = true,
 
@@ -160,7 +160,6 @@ module Base
 
 		passenger FrontRight
 		{
-
 			showPassenger = true,
 			hasRoof = true,
 
@@ -180,37 +179,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 1.1667 1.5926 0.8889 0.9136,
+			xywh = 0.9444 1.6543 0.4444 0.8148,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.1667 2.5617 0.8889 0.8765,
+			xywh = 0.9444 2.4815 0.4444 0.4691,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.1667 2.5617 0.8889 0.8765,
+			xywh = -0.9444 2.4815 0.4444 0.4691,
 		}
 
 		area GasTank
 		{
-			xywh = 0.7469 0.0494 0.0000 0.0000,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -3.8025 1.5926 1.5432,
+			xywh = 0.9198 -0.1481 0.3827 0.4444,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = -0.7778 0.0000 0.0000 0.0000,
+			xywh = -0.7284 1.9259 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.7222 3.0000 0.0000 0.0000,
+			xywh = 0.7160 1.9259 0.0000 0.0000,
 		}
 
 		area TireRearLeft
