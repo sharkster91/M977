@@ -1,7 +1,0 @@
-module Base {
-
-    sound HEMTTHorn {
-        category = EHE: Main, loop = true, is3D = true,
-        clip { file = media/sound/HEMTTHorn.ogg, distanceMax = 800, volume = 1.0, } }
-
- }
