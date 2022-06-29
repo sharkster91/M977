@@ -77,7 +77,6 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-
 		template! = HEMTTtruck,
 		extents = 1.4444 0.9630 5.9753,
 		mass = 1500,
@@ -224,9 +223,8 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -1.1852 1.9136 3.9630,
+			xywh = 0.0000 -3.9321 1.4568 1.3827,
 		}
-
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -295,7 +293,6 @@ module Base
 
 		part Windshield*
 		{
-
 			model windshieldFront
 			{
 				file = HEMTTWindshield,
@@ -386,6 +383,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -431,6 +429,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
