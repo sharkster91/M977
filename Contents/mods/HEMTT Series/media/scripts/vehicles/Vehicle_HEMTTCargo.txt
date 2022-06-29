@@ -2,10 +2,48 @@ module Base
 {
 	model HEMTTCargoBase
 	{
-		mesh = vehicles/Vehicle_HEMTTCargo_Body,
+		mesh = vehicles/Vehicle_HEMTTCargo_Body|body_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
+	}
+	model HEMTTWindshield
+	{
+		mesh = vehicles/Vehicle_HEMTTCargo_Body|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HEMTTFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_HEMTTCargo_Body|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model HEMTTFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_HEMTTCargo_Body|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model HEMTTFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_HEMTTCargo_Body|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model HEMTTFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_HEMTTCargo_Body|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
 	model HEMTTfrontwheelleft
 	{
@@ -140,9 +178,13 @@ module Base
 
 		passenger FrontLeft
 		{
+
+			showPassenger = true,
+			hasRoof = true,
+
 			position inside
 			{
-				offset = 0.4383 0.5556 2.6790,
+				offset = 0.5432 0.5556 2.4877,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -156,9 +198,13 @@ module Base
 
 		passenger FrontRight
 		{
+
+			showPassenger = true,
+			hasRoof = true,
+
 			position inside
 			{
-				offset = -0.3951 0.5556 2.6790,
+				offset = -0.5000 0.5556 2.4877,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -187,7 +233,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = 0.7469 0.0494 0.0000 0.0000,
+			xywh = 0.9198 -0.1481 0.3827 0.4444,
 		}
 
 		area TruckBed
@@ -287,6 +333,12 @@ module Base
 
 		part Windshield*
 		{
+
+			model windshieldFront
+			{
+				file = HEMTTWindshield,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -304,8 +356,74 @@ module Base
 		template = Window/part/WindowFrontRight,
 		template = Windshield/part/WindshieldRear,
 
-		part Door*
+		part WindowFrontRight
 		{
+			model windowFR
+			{
+				file = HEMTTFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = HEMTTFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = HEMTTFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -317,8 +435,40 @@ module Base
 			}
 		}
 
-		part HEMTTFrontDoor*
+		part DoorFrontRight
 		{
+			model Default
+			{
+				file = HEMTTFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -331,7 +481,6 @@ module Base
 		}
 
 		template = Tire,
-		template = Axle,
 
 		part TireFrontLeft
 		{
