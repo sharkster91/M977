@@ -111,7 +111,7 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = HEMTTHorn,
+			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
