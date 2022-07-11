@@ -115,7 +115,6 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		
 		template! = HEMTTtruck,
 		extents = 1.4444 0.9630 5.9753,
 		mass = 1500,
@@ -123,7 +122,7 @@ module Base
 		centerOfMassOffset = 0.0000 0.4938 0.0000,
 		shadowExtents = 1.4936 6.1145,
 		shadowOffset = 0.0000 -0.0094,
-		engineForce = 10000,
+		engineForce = 6000,
 		engineQuality = 70,
 		engineLoudness = 100,
 		maxSpeed = 55f,
@@ -260,11 +259,10 @@ module Base
 			xywh = -0.9568 0.0000 0.4815 1.0000,
 		}
 
-				area TruckBed
+		area TruckBed
 		{
 			xywh = 0.0000 -1.1852 1.9136 3.9630,
 		}
-
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -333,7 +331,6 @@ module Base
 
 		part Windshield*
 		{
-
 			model windshieldFront
 			{
 				file = HEMTTWindshield,
@@ -424,6 +421,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -469,6 +467,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -566,7 +565,7 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 -0.2747 -1.1813,
+			offset = 0.0000 -0.1358 -2.9938,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

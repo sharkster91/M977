@@ -84,7 +84,7 @@ module Base
 		centerOfMassOffset = 0.0000 0.4938 0.0000,
 		shadowExtents = 1.4936 6.1145,
 		shadowOffset = 0.0000 -0.0094,
-		engineForce = 10000,
+		engineForce = 6000,
 		engineQuality = 70,
 		engineLoudness = 100,
 		maxSpeed = 55f,
@@ -525,7 +525,7 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 -0.2747 -1.1813,
+			offset = 0.0000 -0.1420 -3.1481,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

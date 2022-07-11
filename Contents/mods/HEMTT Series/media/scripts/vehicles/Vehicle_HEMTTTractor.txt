@@ -78,7 +78,7 @@ module Base
 		}
 
 		template! = HEMTTtruck,
-		extents = 1.4444 0.9630 5.9753,
+		extents = 1.4444 0.9630 5.9877,
 		mass = 1500,
 		physicsChassisShape = 1.4321 0.9630 5.9753,
 		centerOfMassOffset = 0.0000 0.4938 0.0000,
@@ -87,7 +87,7 @@ module Base
 		engineForce = 10000,
 		engineQuality = 70,
 		engineLoudness = 100,
-		maxSpeed = 55f,
+		maxSpeed = 45f,
 		brakingForce = 35,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.2f,
@@ -220,7 +220,7 @@ module Base
 		{
 			xywh = -0.9568 0.0000 0.4815 1.0000,
 		}
-		
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GasTank,
@@ -279,7 +279,6 @@ module Base
 
 		part Windshield*
 		{
-
 			model windshieldFront
 			{
 				file = HEMTTWindshield,
@@ -371,6 +370,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -416,6 +416,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -513,14 +514,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.2160 -2.9506,
+			offset = 0.0000 -0.0309 -3.0370,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.1481,
+			offset = 0.0000 -0.0679 3.1667,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
@@ -531,8 +532,7 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
-
-			template vehicle HEMTTtruck
+	template vehicle HEMTTtruck
     {
         part TCLConfig
         {
