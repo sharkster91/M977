@@ -355,6 +355,11 @@ module Base
 
 		part WindowFrontRight
 		{
+			window
+			{
+				openable = false,
+			}
+
 			model windowFR
 			{
 				file = HEMTTFrontRightWindow,
@@ -372,6 +377,11 @@ module Base
 
 		part WindowFrontLeft
 		{
+			window
+			{
+				openable = false,
+			}
+
 			model windowFL
 			{
 				file = HEMTTFrontLeftWindow,
