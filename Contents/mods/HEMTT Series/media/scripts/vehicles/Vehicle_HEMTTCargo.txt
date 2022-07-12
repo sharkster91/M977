@@ -80,7 +80,7 @@ module Base
 		{
 			file = HEMTTCargoBase,
 			scale = 1.6200,
-			offset = -0.0185 -0.1481 -0.1235,
+			offset = 0.0000 -0.1481 -0.1235,
 		}
 
 		skin
@@ -119,7 +119,7 @@ module Base
 		extents = 1.4444 0.9630 5.9753,
 		mass = 1500,
 		physicsChassisShape = 1.4321 0.9630 5.9753,
-		centerOfMassOffset = 0.0000 0.4938 0.0000,
+		centerOfMassOffset = 0.0123 0.4938 0.0000,
 		shadowExtents = 1.4936 6.1145,
 		shadowOffset = 0.0000 -0.0094,
 		engineForce = 6000,
@@ -183,7 +183,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5432 0.5556 2.4877,
+				offset = 0.5432 0.4691 2.4877,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -202,7 +202,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5000 0.5556 2.4877,
+				offset = -0.5000 0.4691 2.4877,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 

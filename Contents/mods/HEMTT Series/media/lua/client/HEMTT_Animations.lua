@@ -38,22 +38,22 @@ local vehicleToSeatAnimations = {
 
     ["Base.HEMTTLoadBearing"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["passenger"]={"Shark_Idle_Passenger",},
+		["seat1"]={"Shark_Idle_Passenger",},
     },
 
 	["Base.HEMTTFuel"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["passenger"]={"Shark_Idle_Passenger",},
+		["seat1"]={"Shark_Idle_Passenger",},
     },
 
 	["Base.HEMTTCargo"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["passenger"]={"Shark_Idle_Passenger",},
+		["seat1"]={"Shark_Idle_Passenger",},
     },
 
 	["Base.HEMTTTractor"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["passenger"]={"Shark_Idle_Passenger",},
+		["seat1"]={"Shark_Idle_Passenger",},
     },
 
 }
